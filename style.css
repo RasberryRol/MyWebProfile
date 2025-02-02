@@ -257,7 +257,7 @@ nav .fa-solid{
 
 @media(max-width: 700px){
     .diplomas, .certificates{
-        height: 190px;
+        height: 220px;
     }
     .diplomas{
         margin-left: 30px;
