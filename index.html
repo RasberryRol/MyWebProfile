@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&display=swap" 
             rel="stylesheet">
-        <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css">
+        <!-- <link rel="stylesheet" href="font-awesome-4.7.0\css\font-awesome.min.css"> -->
     </head>
 
     <body>
@@ -23,7 +23,8 @@
                 </div>
                 
                 <p>"Letting go is difficult, but essential for growth and happiness!"<br>~ Atmosphere of Grace</p>
-                <div class="navlinks">
+                <div class="navlinks" id="nav-links">
+                    <i class="fa-solid fa-x" onclick="closeNavLinks()"></i>
                     <ul>
                         <li class="links" ><a href="#top">Top</a></li>
                         <li class="links" ><a href="#back">Background</a></li>
@@ -31,7 +32,7 @@
                         <li class="links" ><a href="#cont">Contacts</a></li>
                     </ul>
                 </div>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars" onclick="openNavLinks()"></i>
             </nav>
 
             <div class="welcomeBox">
@@ -133,6 +134,18 @@
                 </div>
             </section>
         </section>
+
+        <script>
+            function openNavLinks(){
+                const bars = document.getElementById("nav-links");
+                bars.style.right = 0;
+            }
+
+            function closeNavLinks(){
+                const x = document.getElementById("nav-links");
+                x.style.right = "-200px";
+            }
+        </script>
     </body>
 
 </html>

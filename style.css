@@ -8,6 +8,7 @@
 body{
     min-width: 370px;
     min-height: 500px;
+    color:#fff;
 }
 
 .welcomeAndHeader{
@@ -135,6 +136,31 @@ nav .fa-solid{
         
     }
     .navlinks{
+        position: fixed;
+        height: 110vh;
+        background: blue;
+        padding: 10px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        transition: 1s;
+    }
+    .navlinks .fa-x{
+        position: absolute;
+        top: 0;
+        padding: 15px 0 0 5px;
+    }
+    .navlinks ul{
+        margin-top: 50px;
+    }
+    .navlinks ul li{
+        text-align: left;
+        background-image: linear-gradient(rgb(45, 56, 175),rgb(6, 6, 160));
+        margin: 10px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .navlinks ul li::after{
         display: none;
     }
     .profile img{
@@ -332,7 +358,7 @@ span{
     width: 100%;
     font-weight: 600;
     font-size: 18px;
-    color: #000002;
+    color:#fff;
     opacity: 0;
     transition: 0.5s;
 }
@@ -387,7 +413,7 @@ span{
     cursor: pointer;
 }
 .contacts .media p a{
-    color: black;
+    color:#fff;
     font-size: large;
     font-weight: 600;
     text-decoration: underline;
